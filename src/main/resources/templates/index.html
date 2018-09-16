@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+<li class="list-group-item" th:each="article:${articles}">
+    <span th:text="${article.id}" />
+    <span th:text="${article.title}" />
+</li>
+</body>
+</html>
